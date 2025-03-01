@@ -24,7 +24,6 @@ li {
     margin-top: 20px;
 }
 
-/* Base Styles for Images (Mobile-First) */
 img {
     border: 5px solid blue;
     border-radius: 35px;
@@ -36,14 +35,12 @@ img {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Mobile-First Grid (1-column) */
 .grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
 }
 
-/* Tablet View (772px) */
 @media (min-width: 772px) {
     .grid {
         grid-template-columns: 1fr 1fr; /* Two-column grid */
@@ -58,7 +55,6 @@ img {
     }
 }
 
-/* Large Screen View (992px) */
 @media (min-width: 992px) {
     .grid {
         grid-template-columns: repeat(3, 1fr); /* Three-column grid */
@@ -73,14 +69,12 @@ img {
     }
 }
 
-/* Prefers-Reduced-Motion */
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto; /* Remove smooth scrolling */
     }
 }
 
-/* Dark Color Scheme */
 @media (prefers-color-scheme: dark) {
     figure {
         background-color: #333; /* Dark background */
